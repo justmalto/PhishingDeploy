@@ -4,8 +4,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
 # Load the trained model and tokenizer
-model = joblib.load(r'C:\Users\omkar\OneDrive\Documents\Projects\Streamlit2\phishingmodel.pkl')
-tokenizer = joblib.load(r'C:\Users\omkar\OneDrive\Documents\Projects\Streamlit2\tokenizer.pkl')
+model = joblib.load('phishingmodel.pkl')
+tokenizer = joblib.load('tokenizer.pkl')
 
 MAX_SEQUENCE_LENGTH = 250
 
